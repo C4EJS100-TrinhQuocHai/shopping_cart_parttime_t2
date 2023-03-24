@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/futura-std-4" rel="stylesheet" />
+    <link rel="stylesheet" href="./styleadmin.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Quản lí sản phẩm</h2>
+    <div class="container">
+      <div class="crud">
+        <h3>Thông tin sản phẩm</h3>
+        <table style="font-size: 20px; color: #fff">
+          <tr>
+            <td style="padding-bottom: 20px">Tên sản phẩm</td>
+            <td style="padding-bottom: 20px">
+              <input type="text" id="nameProduct" style="outline: none" />
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 20px">Ảnh sản phẩm</td>
+            <td style="padding-bottom: 20px">
+              <input type="file" id="imgProduct" style="outline: none" />
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 20px">Giá sản phẩm</td>
+            <td style="padding-bottom: 20px">
+              <input type="text" id="priceProduct" style="outline: none" />
+            </td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 20px">Mô tả sản phẩm</td>
+            <td style="padding-bottom: 20px">
+              <textarea
+                name=""
+                id="desProduct"
+                cols="22"
+                rows="10"
+                style="outline: none"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <div class="buttonSave">
+          <button
+            style="color: #1939bc; width: 70px; height: 30px; font-size: 20px"
+            onclick="saveButton()"
+          >
+            Save
+          </button>
+        </div>
+      </div>
+      <div class="productAdded">
+        <h3>Sản phẩm đã được thêm</h3>
+        <table id="tableAdded" style="text-align: center; font-size: 20px">
+          <!-- <tr>
+          <td>Tên</td>
+          <td>Ảnh</td>
+          <td>Giá</td>
+          <td>Mô tả</td>
+        </tr> -->
+        </table>
+      </div>
+    </div>
+    <script src="./admin.js"></script>
+  </body>
+</html>

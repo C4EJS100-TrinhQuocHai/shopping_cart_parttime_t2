@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/futura-std-4" rel="stylesheet" />
+    <link
+      href="https://img.cdn.vncdn.io/cdn-pos/f8f19b-53936/store/20190718_dMIPi931p7zUMwwzEZleqdMk.png"
+      rel="icon"
+      type="image/vnd.microsoft.icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Trang chủ</title>
+  </head>
+  <style>
+    .logoCartwindow{
+      display: flex;
+    }
+    .logoCart{
+      display: block;
+    }
+    .icon1{
+      width:25px;
+      height:25px;
+      border: 2px solid red !important;
+      border-radius: 100%;
+      padding: 15px;
+    }
+    .count{
+      position: relative;
+      bottom: 8px;
+      right:4px;
+      color: red;
+    }
+  </style>
+  <body>
+    <div class="titleheader">
+      <h4 style="padding-top: 5px">Welcome to my world</h4>
+    </div>
+    <header>
+      <div class="header_top">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              style="max-width: 200px"
+              alt="Logo"
+              src="https://img.cdn.vncdn.io/cdn-pos/f8f19b-53936/store/20190718_dMIPi931p7zUMwwzEZleqdMk.png"
+          /></a>
+        </div>
+        <div class="nav_menu">
+          <div class="dropdown">
+            <a class="dropbtn">TOP</a>
+            <ul class="dropdown-content">
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+              <li><a href="#">Option 4</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a class="dropbtn">BOTTOM</a>
+            <ul class="dropdown-content">
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+              <li><a href="#">Option 4</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a class="dropbtn">SNEAKER</a>
+            <ul class="dropdown-content">
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+              <li><a href="#">Option 4</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a class="dropbtn">NEWS</a>
+            <ul class="dropdown-content">
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+              <li><a href="#">Option 4</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search" id="change">
+          <input type="text" class="searchtext" />
+          <i
+            class="fa-solid fa-magnifying-glass"
+            style="position: relative; left: -20px; font-size: 13px"
+          ></i>
+          <i
+            class="fa-solid fa-cart-shopping"
+            style="position: relative; left: -15px; font-size: 13px"
+          ></i>
+          <i
+            class="fa-solid fa-user"
+            style="font-size: 15px; padding-right: 5px"
+          ></i>
+          <a
+            href="signupsignin.html"
+            style="color: #1939bc; text-decoration: none; font-size: 20px"
+            id="changeIndex"
+            >Đăng nhập/Đăng ký</a
+          >
+          <span id="logOutButton"></span>
+        </div>
+      </div>
+      <div class="logoCartwindow">
+        <a href="./cart.html" class="logoCart"
+          ><i class="fa-solid fa-cart-shopping" style="color: #005eff"></i
+        ></a>
+      <div class="icon1"><span class="count">0</span></div>
+      </div>
+    </header>
+    <section>
+      <div class="section">
+        <h2 style="font-size: 40px; text-align: center; color: #1939bc">
+          <strong>BEST SELLER</strong>
+        </h2>
+      </div>
+      <div class="product">
+       
+       <!-- ffdfdfdjfdjfdjfk -->
+       
+      </div>
+      <div class="section">
+        <h2 style="font-size: 40px; text-align: center; color: #1939bc">
+          <strong>NEW ARRIVAL</strong>
+        </h2>
+      </div>
+      <div class="product">
+        <div class="element">
+          <img src="./img/1.jpg" alt="CONVERSE shoes 1" />
+          <p class="nameproduct">CONVERSE SHOES</p>
+          <span class="price" style="color: #1939bc">1.350.000 VNĐ</span>
+          <div class="buyandsell">
+            <button class="sell" disabled>
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <span class="numbers" style="font-size: 25px">0</span>
+            <button class="buy"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <button class="addCart" onclick="addToCart()">
+            Thêm vào giỏ hàng
+          </button>
+        </div>
+
+        <div class="element">
+          <img src="./img/2.jpg" alt="CONVERSE shoes 2" />
+          <p style="color: #1939bc" class="nameproduct">CONVERSE 70s</p>
+          <span class="price" style="color: #1939bc">1.500.000 VNĐ</span>
+          <div class="buyandsell">
+            <button class="sell" disabled>
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <span class="numbers" style="font-size: 25px">0</span>
+            <button class="buy"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <button class="addCart" onclick="addToCart()">
+            Thêm vào giỏ hàng
+          </button>
+        </div>
+        <div class="element">
+          <img src="./img/3.jpg" alt="MLB shoes 1" />
+          <p style="color: #1939bc" class="nameproduct">MLB HIGH GREEN</p>
+          <span class="price" style="color: #1939bc">1.500.000 VNĐ</span>
+          <div class="buyandsell">
+            <button class="sell" disabled>
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <span class="numbers" style="font-size: 25px">0</span>
+            <button class="buy"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <button class="addCart" onclick="addToCart()">
+            Thêm vào giỏ hàng
+          </button>
+        </div>
+        <div class="element">
+          <img src="./img/4.jpg" alt="MLB tight" />
+          <p style="color: #1939bc" class="nameproduct">MLB FREECE JACKET</p>
+          <span class="price" style="color: #1939bc">1.500.000 VNĐ</span>
+          <div class="buyandsell">
+            <button class="sell" disabled>
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <span class="numbers" style="font-size: 25px">0</span>
+            <button class="buy"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <button class="addCart" onclick="addToCart()">
+            Thêm vào giỏ hàng
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    let day = new Date().getTime();
+    // let product=[
+    //   {
+    //     anh:"./img/1.jpg",
+    //     name:"CONVERSE SHOES1",
+    //     price:"1350000",
+    //     sl:1,
+    //   },
+    //   {
+    //     anh: "./img/2.jpg",
+    //     name: "CONVERSE SHOES2",
+    //     price: "2550000",
+    //     sl: 1,
+    //   },
+    //   {
+    //     anh: "./img/3.jpg",
+    //     name: "CONVERSE SHOES3",
+    //     price: "4000000",
+    //     sl: 1,
+    //   }, {
+    //     anh: "./img/4.jpg",
+    //     name: "CONVERSE SHOES4",
+    //     price: "1000000",
+    //     sl: 1,
+    //   }
+    // ]
+    // localStorage.setItem("product",JSON.stringify(product));
+     let product=JSON.parse(localStorage.getItem("product"));
+
+    function sinhId(){
+      for(let i=0;i< product.length;i++){
+        product[i].id = Math.floor(Math.random() * 10000) + day;
+      }
+        localStorage.setItem("product",JSON.stringify(product));
+    }
+
+    function renderProducts() {
+      let result='';
+      for (let i = 0; i < product.length; i++) {
+        // product[i].id= Math.floor(Math.random()*10000) + day;
+
+       result+=
+       `
+        <div class="element">
+          <img src="${product[i].anh}" alt="CONVERSE shoes 1" />
+          <p class="nameproduct">${product[i].name}</p>
+          <span class="price" style="color: #1939bc">${product[i].price} VNĐ</span>
+          <div class="buyandsell">
+            <button class="sell" disabled>
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <span class="numbers" style="font-size: 25px">${product[i].sl}</span>
+            <button class="buy"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <button class="addCart" onclick=addToCart(${product[i].id})>
+            Thêm vào giỏ hàng
+          </button>
+        </div>
+       `
+       
+      }
+      console.log("11111",product);
+      localStorage.setItem("product",JSON.stringify(product));
+      document.getElementsByClassName("product")[0].innerHTML=result;
+
+    }
+    renderProducts();
+    function addToCart(id) {
+      let listProduct=JSON.parse(localStorage.getItem("listProductCart"));
+      if(listProduct==null){
+        listProduct=[];
+        for (let index = 0; index < product.length; index++) {
+          if(product[index].id==id){
+            listProduct.push(product[index]);
+            document.getElementsByClassName("count")[0].innerHTML=1;
+            localStorage.setItem("listProductCart",JSON.stringify(listProduct));
+            break;
+          }
+        }
+      }else{
+         for (let index = 0; index < product.length; index++) {
+          if (product[index].id == id) {
+            // kiểm tra cái listProduct đã có sản phầm đấy chưa
+            // listProduct.push(product[index]);
+            // localStorage.setItem("listProductCart", JSON.stringify(listProduct));
+            // break;
+            let flag=true;
+            for (let i = 0; i < listProduct.length; i++) {
+              if(listProduct[i].id==id){
+                flag=false;
+                break;
+              }else{
+                flag=true
+              }
+            }
+            if(!flag){
+              // doc("sản phẩm đã có trong giỏ hàng");
+              // sản phẩm đã có trong giỏ hàng
+            }else{
+              listProduct.push(product[index]);
+              console.log();
+              document.getElementsByClassName("count")[0].innerHTML= listProduct.length;
+              localStorage.setItem("listProductCart", JSON.stringify(listProduct));
+            }
+          }
+        }
+      }
+      console.log("listProduct1", listProduct);
+    }
+  
+  </script>
+  <script src="./signupsignin.js"></script>
+</html>
